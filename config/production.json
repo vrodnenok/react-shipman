@@ -1,0 +1,25 @@
+{
+  "app": {
+    "name": "Victors new project - production",
+    "version": "1.0.0"
+  },
+  "server": {
+    "port": "3000"
+  },
+  "template": {
+    "path": "../../client",
+    "options": {
+      "map": {"ect": "ect"}
+    }
+  },
+  "session": {
+    "secretKey": "you never know"
+  },
+  "db": {
+      "name": "exp_db_dev",
+      "username": "vic",
+      "password": "8102977aa",
+      "port": "5433"
+    },
+  "seed": "true"
+}

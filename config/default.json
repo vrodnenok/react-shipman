@@ -1,0 +1,27 @@
+{
+  "app": {
+    "name": "Victors new project - development",
+    "version": "1.0.0"
+  },
+  "server": {
+    "port": "3000"
+  },
+  "template": {
+    "path": "../client",
+    "options": {
+      "map": {"html": "html"}
+    }
+  },
+  "static": "./build/public",
+  "session": {
+    "secretKey": "you never know"
+  },
+  "db": {
+      "name": "postgres://vr:8102977aa@127.0.0.1:5433/exp2_db_dev",
+      "username": "vic",
+      "password": "8102977aa",
+      "host": "localhost",
+      "port": "5433"
+    },
+  "seed": "true"
+}
