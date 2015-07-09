@@ -7,7 +7,11 @@ const
   path = require('path'),
   config = require('config'),
   Sequelize = require('sequelize'),
-  sequelize = new Sequelize(config.db.name);
+  sequelize = new Sequelize(config.db.name, {
+    dialectOption: {
+      ssl: true
+    }
+  });
 
 let db = {};
 
