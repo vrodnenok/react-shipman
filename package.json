@@ -4,7 +4,7 @@
   "description": "",
   "main": "./server/index.js",
   "scripts": {
-    "start": "node --harmony ./server/index.js",
+    "start": "DATABASE_URL=$(heroku config:get DATABASE_URL) node --harmony ./server/index.js",
     "test": "NODE_ENV=test mocha",
     "e2e": "nightwatch -t ",
     "webdr": "webdriver-manager start",
@@ -39,7 +39,8 @@
     "react-bootstrap": "^0.23.7",
     "react-router": "^0.13.3",
     "regenerator": "^0.8.32",
-    "sequelize": "^3.3.2"
+    "sequelize": "^3.3.2",
+    "sequelize-heroku": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",

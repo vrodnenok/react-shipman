@@ -3,15 +3,9 @@
 var
   koa = require('koa'),
   config = require('config'),
-  Sequelize = require('sequelize'),
+  Sequelize = require('sequelize-heroku'),
   models = require('./api/models'),
-  sequelize = new Sequelize(config.db.name, {
-        dialect: "postgres",
-        native: true,
-        dialectOptions: {
-          ssl: true
-        }
-  }),
+  sequelize = Sequelize.connect(),
   app = module.exports = koa();
 
 require('../config/koa')(app);
