@@ -7,7 +7,7 @@
     "iojs": "2.3.x"
   },
   "scripts": {
-    "start": "DATABASE_URL=postgres://qpugqmzecqvbag:4FNuym5PCaJZSa2mrogI3w29SJ@ec2-54-217-202-109.eu-west-1.compute.amazonaws.com:5432/didvu0qeq9u8c node --harmony ./server/index.js",
+    "start": "DATABASE_URL=postgres://yycvmimsiuzrgv:uGHi5-NWj2lphMl8alfICcb_r7@ec2-54-204-15-41.compute-1.amazonaws.com:5432/d5s9pqfolf72s node --harmony ./server/index.js",
     "test": "NODE_ENV=test mocha",
     "e2e": "nightwatch -t ",
     "webdr": "webdriver-manager start",
@@ -36,6 +36,7 @@
     "lodash": "^3.10.0",
     "node-libs-browser": "^0.5.2",
     "path": "^0.11.14",
+    "pg": "^4.4.0",
     "pg-hstore": "^2.3.2",
     "pg-native": "^1.8.1",
     "react": "^0.13.3",
