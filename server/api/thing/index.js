@@ -1,6 +1,6 @@
 'use strict';
 
-const
+var
   Router = require('koa-router'),
   things = new Router(),
   controller = require('./thing.controller');

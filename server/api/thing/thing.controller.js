@@ -1,6 +1,6 @@
 'use strict';
 
-const
+var
   Thing = require('../models').Thing;
 
 module.exports = {

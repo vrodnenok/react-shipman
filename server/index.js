@@ -1,6 +1,6 @@
 'use strict';
 
-const
+var
   koa = require('koa'),
   config = require('config'),
   Sequelize = require('sequelize'),

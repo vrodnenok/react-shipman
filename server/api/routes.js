@@ -2,7 +2,7 @@
 
 module.exports = function (app){
 
-const
+var
   thingRouter = require('./thing'),
   mount = require('koa-mount'),
   Router = require('koa-router'),
