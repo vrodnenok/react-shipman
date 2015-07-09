@@ -5,7 +5,10 @@ var
   config = require('config'),
   Sequelize = require('sequelize'),
   models = require('./api/models'),
-  sequelize = new Sequelize(config.db.name),
+  sequelize = new Sequelize(config.db.name, {
+        native: true,
+        ssl: true
+  }),
   app = module.exports = koa();
 
 require('../config/koa')(app);
