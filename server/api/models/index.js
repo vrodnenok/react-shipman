@@ -11,7 +11,9 @@ const
   {
       dialect: "postgres",
       native: true,
-      ssl: true
+      dialectOptions: {
+        ssl: true
+      }
   }
   );
 

@@ -2,7 +2,7 @@
   "name": "experiment-2",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/server.js",
+  "main": "./server/index.js",
   "scripts": {
     "start": "node --harmony ./server/index.js",
     "test": "NODE_ENV=test mocha",

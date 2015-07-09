@@ -8,7 +8,9 @@ var
   sequelize = new Sequelize(config.db.name, {
         dialect: "postgres",
         native: true,
-        ssl: true
+        dialectOptions: {
+          ssl: true
+        }
   }),
   app = module.exports = koa();
 
