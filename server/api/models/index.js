@@ -9,6 +9,7 @@ const
   Sequelize = require('sequelize'),
   sequelize = new Sequelize(config.db.name,
   {
+      native: true,
       ssl: true
   }
   );
