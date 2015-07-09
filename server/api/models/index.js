@@ -7,15 +7,7 @@ const
   path = require('path'),
   config = require('config'),
   Sequelize = require('sequelize'),
-  sequelize = new Sequelize(config.db.name,
-  {
-      dialect: "postgres",
-      native: true,
-      dialectOptions: {
-        ssl: true
-      }
-  }
-  );
+  sequelize = Sequelize.connect();
 
 let db = {};
 

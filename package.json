@@ -4,7 +4,7 @@
   "description": "",
   "main": "./server/index.js",
   "scripts": {
-    "start": "DATABASE_URL=$(heroku config:get DATABASE_URL) node --harmony ./server/index.js",
+    "start": "DATABASE_URL=postgres://qpugqmzecqvbag:4FNuym5PCaJZSa2mrogI3w29SJ@ec2-54-217-202-109.eu-west-1.compute.amazonaws.com:5432/didvu0qeq9u8c node --harmony ./server/index.js",
     "test": "NODE_ENV=test mocha",
     "e2e": "nightwatch -t ",
     "webdr": "webdriver-manager start",
