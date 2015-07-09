@@ -12,7 +12,7 @@
       "map": {"html": "html"}
     }
   },
-  "static": "./public",
+  "static": "/build/public",
   "session": {
     "secretKey": "you never know"
   },

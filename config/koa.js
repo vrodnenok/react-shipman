@@ -13,7 +13,7 @@ const
 
 module.exports = function(app){
   app.use(views(config.template.path));
-  app.use(serve(staticPath));
+  app.use(serve(__dirname + '/build/public'));
   app.use(logger());
   app.use(bodyParser());
 };
