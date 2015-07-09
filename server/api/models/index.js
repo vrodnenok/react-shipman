@@ -6,7 +6,7 @@ const
   fs = require('fs'),
   path = require('path'),
   config = require('config'),
-  Sequelize = require('sequelize'),
+  Sequelize = require('sequelize-heroku'),
   sequelize = Sequelize.connect();
 
 let db = {};
