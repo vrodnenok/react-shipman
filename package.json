@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "./server/index.js",
+  "engines": {
+    "iojs": "2.3.x"
+  },
   "scripts": {
     "start": "DATABASE_URL=postgres://qpugqmzecqvbag:4FNuym5PCaJZSa2mrogI3w29SJ@ec2-54-217-202-109.eu-west-1.compute.amazonaws.com:5432/didvu0qeq9u8c node --harmony ./server/index.js",
     "test": "NODE_ENV=test mocha",
