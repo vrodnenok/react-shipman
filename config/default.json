@@ -17,7 +17,7 @@
     "secretKey": "you never know"
   },
   "db": {
-      "name": "postgres://bjfescaojifaqh:WH_Xq1tQJpie1UhL_CvsMGC88-@ec2-23-23-81-221.compute-1.amazonaws.com:5432/dcdf2p64cmngfb",
+      "name": "postgres://qpugqmzecqvbag:4FNuym5PCaJZSa2mrogI3w29SJ@ec2-54-217-202-109.eu-west-1.compute.amazonaws.com:5432/didvu0qeq9u8c",
       "username": "vic",
       "password": "8102977aa",
       "host": "localhost",
