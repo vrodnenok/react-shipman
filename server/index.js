@@ -6,6 +6,7 @@ var
   Sequelize = require('sequelize'),
   models = require('./api/models'),
   sequelize = new Sequelize(config.db.name, {
+        dialect: "postgres",
         native: true,
         ssl: true
   }),
