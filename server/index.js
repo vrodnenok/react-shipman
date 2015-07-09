@@ -30,7 +30,7 @@ console.log("Listening at " + config.server.port);
 
 models.sequelize.sync().then(function(){
   if(config.seed) {require("../config/seed");}
-  if(!module.parent) app.listen(config.server.port);
+  if(!module.parent) app.listen(process.env.PORT || config.server.port);
 }).error(function(err){
   console.log(err.message);
 });
