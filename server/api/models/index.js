@@ -6,8 +6,14 @@ const
   fs = require('fs'),
   path = require('path'),
   config = require('config'),
-  Sequelize = require('sequelize-heroku'),
-  sequelize = Sequelize.connect();
+  Sequelize = require('sequelize'),
+  sequelize = new Sequelize(config.db.name,
+  {
+      protocol: "postgres",
+      native: true,
+      ssl: true
+  }
+  );
 
 let db = {};
 
