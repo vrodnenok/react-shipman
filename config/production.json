@@ -12,6 +12,7 @@
       "map": {"ect": "ect"}
     }
   },
+  "static": "./build/public",
   "session": {
     "secretKey": "you never know"
   },

@@ -101,7 +101,7 @@ const config = {
 const appConfig = merge({}, config, {
   entry: './client/app.js',
   output: {
-    path: './build/public',
+    path: './public',
     filename: 'app.js'
   },
   devtool: DEBUG ? 'source-map' : false /*
